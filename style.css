@@ -1,0 +1,450 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    position: relative;
+    bottom: 35px;
+}
+
+.navbar {
+    position: relative;
+    bottom: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    position: sticky;
+    
+
+}
+
+.navbar__s1 {
+    padding-right: 30px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+
+}
+
+.navbar__s1 img {
+    width: 70px;
+    height: 70px;
+}
+
+.navbar__s2 {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 50px;
+
+
+}
+
+.navbar__s2 h4 {
+    padding: 20px;
+    padding-left: 50px;
+
+}
+
+.navbar__s3 {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    padding-right: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: solid black 1px;
+    position: relative;
+    right: 35px;
+
+
+}
+
+.navbar__s3 p {
+    display: flex;
+    cursor: pointer;
+
+
+}
+
+.navbar__icons img {
+    position: relative;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    padding-right: 0px;
+    display: flex;
+
+
+}
+
+.navbar__icons h4:hover {
+    transition: 1s;
+    text-decoration: underline;
+    color: #34E0A1;
+    
+}
+
+.navbar__s4 {
+    position: relative;
+    
+    
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+}
+
+.navbar__icons {
+    position: relative;
+    
+    
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    gap: 10px;
+    align-items: center;
+    padding-left: 20px;
+    margin: 10px;
+}
+
+.navbar__s5 {
+    position: relative;
+    bottom: 35px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border: solid black 1px;
+    border-radius: 40px;
+    height: 20px;
+    width: 55%;
+    
+
+}
+
+.searchbar{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 3;
+
+}
+
+.navbar__s5 p:hover {
+    transition: 1s;
+    background-color: transparent;
+    color: black;
+    border: solid #34E0A1 1px;
+}
+
+
+.navbar__s5 img {
+    position: relative;
+    right: 10px;
+}
+
+.searchbar {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.navbar__s5 svg{
+    position: relative;
+    bottom: 5px;
+}
+
+.navbar__s5 input {
+    position: relative;
+    left: 10px;
+    border: none;
+    font-size: 15px;
+    width: 90%;
+
+}
+
+.navbar__s5 input:focus {
+    outline: none;
+}
+
+.navbar__s5 p {
+    position: relative;
+    left: 15px;
+    bottom: 15px;
+    background-color: #34E0A1;
+    padding: 30px;
+    padding-top: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: solid #34E0A1 5px;
+
+}
+
+.trip-image {
+    position: relative;
+
+}
+
+.trip-image img {
+    width: 95%;
+    padding: 20px;
+}
+
+.trip-image__offer {
+    width: 45%;
+    border: solid black 0px;
+    color: white;
+    padding: 1%;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    animation-name: zoom;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+.travellers {
+    padding: 10px;
+
+}
+
+.travellers__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+
+}
+
+.trip-card {
+    flex-grow: 1;
+    flex-basis: 15%;
+    margin: 5px;
+
+}
+
+.trip-card svg {
+    position: relative;
+    left: 240px;
+    bottom: 310px;
+
+}
+
+.trip-card p {
+    position: relative;
+    bottom: 50px;
+}
+
+.trip-card img {
+    width: 100%;
+    height: 70%;
+    border-radius: 20px;
+}
+
+.span {
+    width: 20px;
+    height: 20px
+}
+
+
+.destination {
+    padding: 10px;
+
+}
+
+.destination__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+
+}
+
+.destination-card {
+    flex-grow: 1;
+    flex-basis: 15%;
+    margin: 5px;
+
+}
+
+.destination-card img {
+    width: 100%;
+    height: 70%;
+    border-radius: 20px;
+}
+
+.destination__title,
+.travellers__title {
+    gap: 5px;
+    padding-bottom: 10px;
+}
+
+
+
+.destination__container h2 {
+    position: relative;
+    bottom: 50px;
+    left: 8px;
+    color: white;
+
+}
+
+.footer {
+    padding: 30px;
+    background-color: #faf1ed;
+    color: black;
+
+}
+
+.footer__one {
+    display: flex;
+    gap: 10px;
+}
+
+.footer__one p {
+    margin: 20px;
+}
+
+.footer__one__four p{
+    position: relative;
+    left: 150px;
+
+}
+
+.footer__one__five p{
+    position: relative;
+    left: 90px;
+    font-size: smaller;
+
+}
+
+.footer__two {
+    margin: 10px;
+    display: flex;
+    gap: 10px;
+
+}
+
+.footer__two p{
+    position: relative;
+    bottom: 19px;
+}
+
+.footer__three svg{
+    position: relative;
+    left: 1050px;
+    bottom: 100px;
+}
+
+.footer__four {
+    margin: 10px;
+    display: flex;
+    gap: 10px;
+    
+    }
+
+    .footer__four h4{
+        position: relative;
+        bottom: 55px;
+        left: 80px;
+    }
+
+    .footer__five p{
+        position: relative;
+        right: 240px;
+        bottom: 30px;
+        font-size: x-small;
+    }
+
+.footer__two img {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    bottom: 20px;
+    
+}
+
+.footer__two p {
+    font-size: x-small;
+}
+
+.footer__two h4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:800px) {
+    body {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .trip-card {
+        flex-basis: 40%;
+    }
+
+
+    .navbar__s2,
+    .navbar__s3 {
+        display: none;
+    }
+
+    .navbar__s4 {
+        display: block;
+    }
+
+}
+
+.video {
+    position: relative;
+    bottom: 50px;
+}
+
+.video h3 {
+    position: relative;
+    left: 100px;
+    top: 5px;
+
+}
+
+.video p {
+    position: relative;
+    left: 100px;
+    top: 10px;
+}
+
+.footer__one p{
+    gap: 5px;
+    font-size: medium;
+    
+}
+
+.footer{
+    width: 100%;
+    height: 430px;
+    }
